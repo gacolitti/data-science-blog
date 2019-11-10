@@ -1,0 +1,169 @@
+---
+title: "Giovanni Colitti's resume"
+author: Giovanni Colitti
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+Aside
+================================================================================
+
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> g.a.colitti@gmail.com
+- <i class="fa fa-github"></i> [github.com/gacolitti](https://github.com/gacolitti)
+- <i class="fa fa-linkedin"></i> [linkedin.com/gacolitti](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)
+- <i class="fa fa-phone"></i> +1 (661) 546-3491
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+- **Analytical Methods**: 
+regression, classification, feature engineering, linear
+programming and optimization methods, causal analysis, Bayesian and Monte
+Carlo methods
+
+- **Coding**:
+R (caret, brms, shiny, data.table, dplyr, ggplot, plotly, rmarkdown), Stata, SQL, Git, Docker 
+
+- **Languages**:
+Chinese
+
+Coursework {#skills}
+--------------------------------------------------------------------------------
+
+- R Programming (I/II)
+- Data Analysis in R
+- Functional Programming in R
+- Bayesian Statistics
+- Business Analytics
+- Econometrics (I/II)
+- Financial Econometrics
+- Web Applications in R with Shiny
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Last updated on `r Sys.Date()`.
+
+
+Main
+================================================================================
+
+Giovanni Colitti {#title}
+--------------------------------------------------------------------------------
+
+Data Scientist
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### California State University, Channel Islands 
+
+B.A. in Economics (3.8 GPA)
+
+Camarillo, CA
+
+2016
+
+### National Taiwan University
+
+M.S. in Agricultural Economics (4.0 GPA)
+
+Taipei, Taiwan
+
+2018
+
+Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Data Scientist
+
+Grimmway Enterprises
+
+Bakersfield, CA
+
+2018 - Current
+
+- Trained machine learning models in R that improved predictive accuracy over previous methods by 40-50%. 
+- Used linear programming to optimize business operations.
+- Performed complex data cleaning and exploration on large datasets.
+- Wrote statistical analysis reports to determine causal relationships.
+- Developed custom functions in R for cross-validation of Bayesian models.
+- Created Shiny apps and dashboards to visualize projections.
+- Managed database tables using R and SQL.
+- Used Docker and ShinyProxy to publish applications and reports.
+- Communicated analytical methods and results to the entire executive team.
+
+### Data Scientist Intern
+
+Small Business Development Center 
+
+Camarillo, CA
+
+2015 - 2016
+
+- Analyzed small business metrics, such as revenue per employee, to predict which 
+clients have the highest risk of bankruptcy. 
+- Used model predictions to efficiently allocate 
+limited consulting resources to assist at-risk businesses.
+- Trained executive team in statistical methods.
+
+### Research Assistant
+
+California State Univeristy, Channel Islands
+
+Camarillo, CA
+
+2014
+
+- Collected and cleaned data from various online sources using Stata programming. 
+- Created data visualizations in Excel and wrote literature reviews of scientific articles 
+related to Chinese & Indian stock, currency, and debt markets. 
+
+Academic Honors and Awards {data-icon=file}
+--------------------------------------------------------------------------------
+
+### Thesis Competition First Place Prize
+
+Master’s thesis presentation competition first place winner.
+
+N/A
+
+2018
+
+### Taiwan Ministry of Education Scholarship
+
+Merit scholarship for post-graduate studies in Taiwan.
+
+N/A
+
+2016
+
+### Program Honors in Ecnomomics
+
+Selected by CSUCI Economics Department faculty for outstanding achievement.
+
+N/A
+
+2016
+
+### Wange Family Scholarship
+
+Merit scholarship for international study in Taiwan & Mainland China.
+
+N/A
+
+2014
+
+### President's Scholarship
+
+Highest scholastic achievement award in CSU system; only handful awarded annually.
+
+N/A
+
+2012
