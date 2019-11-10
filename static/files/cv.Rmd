@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
     # set it to true for a self-contained HTML page but it'll take longer to render
-    self_contained: true
+    self_contained: false
 ---
 
 Aside
@@ -16,7 +16,7 @@ Contact Info {#contact}
 
 - <i class="fa fa-envelope"></i> g.a.colitti@gmail.com
 - <i class="fa fa-github"></i> [github.com/gacolitti](https://github.com/gacolitti)
-- <i class="fa fa-blogger"></i> [gacolitti.netlify.com](https://gacolitti.netlify.com)
+- <i class="fab fa-blogger-b"></i> [gacolitti.netlify.com](https://gacolitti.netlify.com)
 - <i class="fa fa-linkedin"></i> [Linkedin](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)
 - <i class="fa fa-phone"></i> +1 (661) 546-3491
 
@@ -110,8 +110,8 @@ Camarillo, CA
 
 - Analyzed small business metrics, such as revenue per employee, to predict which 
 clients have the highest risk of bankruptcy. 
-- Used model predictions to efficiently allocate 
-limited consulting resources to assist at-risk businesses.
+- Used model predictions to efficiently allocate limited consulting resources to assist at-risk 
+businesses.
 - Trained executive team in statistical methods.
 
 ### Research Assistant
