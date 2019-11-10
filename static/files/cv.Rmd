@@ -17,6 +17,7 @@ Contact Info {#contact}
 - <i class="fa fa-envelope"></i> g.a.colitti@gmail.com
 - <i class="fa fa-github"></i> [github.com/gacolitti](https://github.com/gacolitti)
 - <i class="fa fa-linkedin"></i> [linkedin.com/gacolitti](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)
+- <i class="fa fa-book"></i> [gacolitti.netlify.com][https://gacolitti.netlify.com]
 - <i class="fa fa-phone"></i> +1 (661) 546-3491
 
 Skills {#skills}
