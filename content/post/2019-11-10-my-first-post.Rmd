@@ -1,0 +1,49 @@
+---
+title: Bayesian Statistics
+author: Giovanni Colitti
+date: '2019-11-10'
+slug: bayesian-statistics
+categories:
+  - blog
+tags:
+  - statistics
+  - bayesian
+---
+
+## Why Bayesian?  
+Bayesian statistics allows us to incorporate prior information
+into our model.  That means that if we have a priori information about
+parameters in our model (and we usually do), we can actually use that
+information!
+
+Okay, but how?
+
+Simple, we just specify prior probability distributions for our model
+parameters.
+
+For example, we know that a binary variable for whether a field is organic
+should have a negative impact on yield, so we might want to nudge the
+coefficient on `organic`, let's call it $\alpha$, in that direction. One way
+to accomplish this is by specifying a normal prior probability distribution on
+$\alpha$ with a mean of -0.5 and a standard deviation of 0.5.
+
+In formula notation, it looks like this:
+
+$$\alpha \sim N(-0.5, 0.5)$$
+
+Of course, when building Bayesian models you'll want to first standardize all
+your variables. Usually, this means we subtract each variable by its mean and
+divide by its standard deviation.
+
+Interpreting coefficients for variables that have been standardized is more
+straightforward (in my opinion). For example, if $\alpha$ turns out to be
+-0.8, this means that `organic` fields have a 0.8 standard deviation lower yield
+than conventional fields, ceteris paribus.  Specifying priors on your
+coefficients also seems to be somewhat easier for standardized variables,
+although some would disagree.
+
+Even if we don't know the relationship between a variable and the outcome, we
+can use **regularizing** priors to reduce **overfitting**. A common regularizing
+prior is $N(0, 1)$. To learn more, visit the Stan developers Github page
+[Prior Choice
+Recommendations](https://github.com/stan-dev/stan/wiki/Prior-Choice-Recommendations).

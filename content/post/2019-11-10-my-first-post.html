@@ -1,0 +1,45 @@
+---
+title: Bayesian Statistics
+author: Giovanni Colitti
+date: '2019-11-10'
+slug: bayesian-statistics
+categories:
+  - blog
+tags:
+  - statistics
+  - bayesian
+---
+
+
+
+<div id="why-bayesian" class="section level2">
+<h2>Why Bayesian?</h2>
+<p>Bayesian statistics allows us to incorporate prior information
+into our model. That means that if we have a priori information about
+parameters in our model (and we usually do), we can actually use that
+information!</p>
+<p>Okay, but how?</p>
+<p>Simple, we just specify prior probability distributions for our model
+parameters.</p>
+<p>For example, we know that a binary variable for whether a field is organic
+should have a negative impact on yield, so we might want to nudge the
+coefficient on <code>organic</code>, let’s call it <span class="math inline">\(\alpha\)</span>, in that direction. One way
+to accomplish this is by specifying a normal prior probability distribution on
+<span class="math inline">\(\alpha\)</span> with a mean of -0.5 and a standard deviation of 0.5.</p>
+<p>In formula notation, it looks like this:</p>
+<p><span class="math display">\[\alpha \sim N(-0.5, 0.5)\]</span></p>
+<p>Of course, when building Bayesian models you’ll want to first standardize all
+your variables. Usually, this means we subtract each variable by its mean and
+divide by its standard deviation.</p>
+<p>Interpreting coefficients for variables that have been standardized is more
+straightforward (in my opinion). For example, if <span class="math inline">\(\alpha\)</span> turns out to be
+-0.8, this means that <code>organic</code> fields have a 0.8 standard deviation lower yield
+than conventional fields, ceteris paribus. Specifying priors on your
+coefficients also seems to be somewhat easier for standardized variables,
+although some would disagree.</p>
+<p>Even if we don’t know the relationship between a variable and the outcome, we
+can use <strong>regularizing</strong> priors to reduce <strong>overfitting</strong>. A common regularizing
+prior is <span class="math inline">\(N(0, 1)\)</span>. To learn more, visit the Stan developers Github page
+<a href="https://github.com/stan-dev/stan/wiki/Prior-Choice-Recommendations">Prior Choice
+Recommendations</a>.</p>
+</div>
