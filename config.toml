@@ -2,8 +2,8 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Giovanni Colitti"
 theme = "hugo-lithium"
-googleAnalytics = ""
-disqusShortname = ""
+googleAnalytics = "UA-151969370-1"
+disqusShortname = "gacolitti"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [permalinks]
