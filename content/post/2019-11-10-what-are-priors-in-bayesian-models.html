@@ -1,0 +1,64 @@
+---
+title: What are Priors in Bayesian Models?
+author: Giovanni Colitti
+date: '2019-11-10'
+slug: what-are-priors-in-bayesian-models
+categories:
+  - blog
+tags:
+  - statistics
+  - bayesian
+---
+
+
+
+<p>Bayesian statistics allows one to incorporate prior information
+into a model. That means that if we have a priori information about
+parameters in our model (and we usually do), we can actually use that
+information!</p>
+<p>Okay, but how?</p>
+<p>Simple, we just specify prior probability distributions for our model
+parameters.</p>
+<p>For example, we know that a binary variable for whether a field is organic
+should have a negative impact on yield, so we might want to nudge the
+coefficient on <code>organic</code>, let’s call it <span class="math inline">\(\alpha\)</span>, in that direction. One way
+to accomplish this is by specifying a normal prior probability distribution on
+<span class="math inline">\(\alpha\)</span> with a mean of -0.5 and a standard deviation of 0.5.</p>
+<p>In formula notation, it looks like this:</p>
+<p><span class="math display">\[\alpha \sim N(-0.5, 0.5)\]</span></p>
+<p>Of course, when building Bayesian models you’ll want to first standardize all
+your variables. This is because different scales across variables in your model
+can make Bayesian model fitting using Markov-Chain Monte-Carlo (MCMC) less efficient.
+Usually, standardization means we subtract each variable by its mean (center) and
+divide by its standard deviation (scale).</p>
+<p>Interpreting coefficients for variables that have been standardized is more
+straightforward, and makes it easier to compare the magnitude of effects across
+different variables on the outcome of interest. For example,
+if <span class="math inline">\(\alpha\)</span> turns out to be
+-0.8, this means that <code>organic</code> fields have a 0.8 standard deviation lower yield
+than conventional fields, ceteris paribus. Specifying priors on
+coefficients also seems to be somewhat easier for standardized variables,
+although some would (strongly) disagree.</p>
+<p>This is all great, but how do we determine what the priors should be? Usually we can
+use domain knowledge or previous research. But sometimes we don’t
+know a priori what the effect of a certain variable should be on the outcome.
+What should we do in these cases?</p>
+<p>Even if we don’t know the relationship between a variable and the outcome, we
+can use <strong>regularizing</strong> priors to reduce <strong>overfitting</strong>. A common regularizing
+prior is <span class="math inline">\(N(0, 1)\)</span>. Regularization is the process of adding information to
+the model to ensure it doesn’t get too excited by noise in the data.
+It makes estimates more conservative,
+and may improve the predictive power of your model on new data.</p>
+<p>To learn more about priors choices in Bayesian models, visit the Stan developers Github page
+<a href="https://github.com/stan-dev/stan/wiki/Prior-Choice-Recommendations">Prior Choice
+Recommendations</a>.</p>
+<p>If you use R, I highly recommend the <a href="https://github.com/paul-buerkner/brms"><code>brms</code></a> package for
+fitting Bayesian models. It is a very flexible, highly capable package that allows users
+to fit very complex Bayesian models in <code>Stan</code> with ease. The author is also very responsive
+to issues users raise on Github.</p>
+<p>For a thorough and insightful introduction to Bayesian statistics, try Richard McElreath’s
+<a href="https://www.crcpress.com/statistical-rethinking-a-bayesian-course-with-examples-in-r-and-stan/mcelreath/p/book/9781482253443"><em>Statistical Rethinking</em></a>. This is a textbook, but is a very
+good textbook with R code examples and thoughtful explanations throughout. The textbook
+also has an accompanying
+<a href="https://www.youtube.com/channel/UCNJK6_DZvcMqNSzQdEkzvzA">YouTube series</a>
+that you can watch for free!</p>
