@@ -1,0 +1,260 @@
+---
+title: Track Your Gold & Silver Portfolio in R with Flexdashboard
+author: Giovanni Colitti
+date: '2019-11-16'
+slug: track-your-portfolio-in-r-with-flexdashboard
+categories:
+  - blog
+tags:
+  - r
+  - shiny
+  - flexdashboard
+---
+
+
+
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>I only discovered <a href="https://github.com/gacolitti/gold-silver-portfolio.git"><code>flexdashboard</code></a>
+after delving semi-deeply into <code>shiny</code> and <code>shinydashboard</code>.
+For the uninitiated, <code>flexdashboard</code> is an R package that utilizes <code>shiny</code> to
+create dashboards.
+(If you have never heard of <code>shiny</code> you can read up on it <a href="https://shiny.rstudio.com">here</a>)</p>
+<p>I think what makes <code>flexdashboard</code> different from building a regular <code>shiny</code> app or <code>shinydashboard</code>
+is that it is easier and faster to work with–at least in my experience. So
+it is probably a better entry point for building dashboards in R than <code>shinydashboard</code>.</p>
+<p>In this post, I am going to walk you through an example of building your very own <code>flexdashboard</code>
+from scratch. We will use the <code>quandl</code> package to fetch current and historical data on
+gold and silver prices, then display the value of a dynamic number of ounces of each inputed
+by the user.</p>
+<p>Before we get started, you might want to clone the
+<a href="https://github.com/gacolitti/gold-silver-portfolio">Github repo</a> for this project and preview the
+final dashboard <a href="https://gacolitti.shinyapps.io/gold-silver-portfolio/">here</a>.</p>
+</div>
+<div id="getting-started" class="section level1">
+<h1>Getting Started</h1>
+<p>You will need to have R and RStudio installed on your machine. Also, make sure you
+have <code>shiny</code>, <code>flexdashboard</code>, <code>quandl</code>, <code>tidyverse</code>, and <code>scales</code> installed. And because
+we use <code>quandl</code>, you will need to <a href="https://www.quandl.com/sign-up-modal?defaultModal=showSignUp">sign up</a>
+for a free account and get an API access token.</p>
+<p>The following code installs these packages:</p>
+<pre class="r"><code>install.packages(c(&#39;shiny&#39;, &#39;flexdashboard&#39;, &#39;quandl&#39;, &#39;tidyverse&#39;, &#39;scales&#39;))</code></pre>
+<p>Then, whenever you want to create a new <code>flexdashboard</code> file, just click the icon in the top left
+and selecct the <code>flexdashboard</code> template. (You might need to restart RStudio if you just installed
+<code>flexdashboard</code>)</p>
+<p><img src="/images/add-file-rstudio.jpg" width="100%" /></p>
+<p><img src="/images/select-flexdashboard-template.jpg" width="100%" /></p>
+</div>
+<div id="yaml" class="section level1">
+<h1>YAML</h1>
+<p>The top of the newly opened <code>.Rmd</code> file includes information on how to build the app. You can
+set the <code>title</code> to anything you like, of course. The <code>runtime</code> option is set to <code>shiny</code> but there
+are other options, such as <code>shiny_prerendered</code>, that I won’t go into. Lastly, the <code>output</code> is
+where we tell the machine we want a <code>flex_dashboard</code> with rows (instead of columns) and we want
+rows to fill the screen (instead of scroll).
+As a bonus, you can add a social media link and source code in the menu.</p>
+<p>After you’re finished, it should look like this:</p>
+<pre class="r"><code>---
+title: &quot;Gold &amp; Silver Portfolio&quot;
+runtime: shiny
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+    social: menu
+    source_code: embed
+---</code></pre>
+</div>
+<div id="setup" class="section level1">
+<h1>Setup</h1>
+<p>In the first code chunk we load the required packages, enable bookmarking (more on that later), and
+set the Quandl API key. You can name this chunk <code>setup</code>.</p>
+<p>If you plan on sharing your code or tracking it on <code>github</code>,
+then you shoudn’t store the API token in your code. One workaround is to create a new file called
+<code>.Renviron</code> in your home directory on your computer and in the first line type <code>QUANDL_API_KEY=your_token</code>,
+where you replace <code>your_token</code> with the API token from your own personal Quandl account you
+created. This file is loaded each time you open RStudio and creates enviornmental variables
+in your R session that can be referrenced with <code>Sys.getenv</code>. In this way, you get easy access
+to your API token but do not risk accidently sharing it with unathorized users.</p>
+<p>Note also the code that enables bookmarking. This is a cool feature in <code>shiny</code> that allows users to store
+the state of the dashboard in the URL which can be restored at a later time.</p>
+<pre class="r"><code>library(flexdashboard)
+library(shiny)
+library(Quandl)
+library(scales)
+library(tidyverse)
+
+shiny::enableBookmarking(store = &#39;url&#39;)
+Quandl.api_key(Sys.getenv(&#39;QUANDL_API_KEY&#39;))</code></pre>
+</div>
+<div id="load-data" class="section level1">
+<h1>Load Data</h1>
+<p>Next, we load the data from Quandl. The first two lines query the Quandl servers, and the rest of
+the code extracts and reshapes.
+Because data only need to be loaded once, this step shouldn’t
+be repeated each time a graph or other output is re-rendered. To ensure that this step is run
+<em>only</em> once during app start-up, we name this chunk <code>global</code>. In this tutorial, we focus on
+gold and silver, but Quandl has data on stocks and other assests as well.</p>
+<pre class="r"><code>gold &lt;- Quandl(&quot;LBMA/GOLD&quot;)
+silver &lt;- Quandl(&quot;LBMA/SILVER&quot;)
+
+gold_current &lt;- gold$`USD (AM)`[1]
+silver_current &lt;- silver$USD[1]
+
+portfolio &lt;- merge(
+  gold,
+  silver,
+  by = &quot;Date&quot;,
+  all.x = TRUE,
+  sort = FALSE
+)</code></pre>
+</div>
+<div id="define-inputs" class="section level1">
+<h1>Define Inputs</h1>
+<p>Now for the meat and potatoes!</p>
+<p>To make things simple, all inputs are placed in the sidebar.
+Each row in the dashboard is defined by a level 2 markdown header (——————) and
+each column within a row is defined by the three hashtags at the top (###).
+We add a sidebar with <code>.sidebar</code> and set the width to 20% with
+<code>data-width=200</code>. (The total width is 1000, so 200 is 20%)</p>
+<pre><code>Inputs {.sidebar data-width=200}
+-----------------------------------------------------------------------
+
+### </code></pre>
+<pre class="r"><code>numericInput(
+  inputId = &quot;gold_oz&quot;,
+  label = &quot;Gold (ounces)&quot;,
+  value = 0,
+  min = 0
+)
+
+numericInput(
+  inputId = &quot;silver_oz&quot;,
+  label = &quot;Silver (ounces)&quot;,
+  value = 0, 
+  min = 0
+)
+
+radioButtons(
+  inputId = &quot;combine&quot;,
+  label = &quot;Combine Values in Plot&quot;, 
+  choices = c(&quot;Yes&quot; = TRUE, &quot;No&quot; = FALSE),
+  selected = FALSE
+)
+
+hr()
+
+bookmarkButton(class = &quot;btn-link&quot;)</code></pre>
+<p>There are three inputs here. The first two are used to define how many ounces of silver and
+gold the user has in his portfolio, and the final input is a yes/no radio button to combine
+lines in the plot created later.</p>
+<p>In the last line, we add a bookmark button that triggers bookmarking. Once
+clicked, a modal will pop up with a URL that can be used to restore the current state of the
+dashboard.</p>
+</div>
+<div id="current-portfolio-value" class="section level1">
+<h1>Current Portfolio Value</h1>
+<p>Since we are done with the sidebar, we need to create another row.</p>
+<pre><code>Current Value {data-height=100}
+-----------------------------------------------------------------------</code></pre>
+<p>The goal is to display the current value of gold and silver (and total value)
+in the portfolio using the <code>valueBox</code> function from
+<code>flexdashboard</code>. To ensure that each value box gets its own column, use the header
+syntax again (###) above each new code chunk.</p>
+<pre class="r"><code>renderValueBox({
+  valueBox(
+    value = dollar(round(input$gold_oz * gold_current + input$silver_oz * silver_current)),
+    icon = &quot;fas fa-coins&quot;,
+    caption = &quot;Total Value&quot;
+  )
+})</code></pre>
+<pre class="r"><code>renderValueBox({
+  valueBox(
+    value = dollar(round(input$gold_oz * gold_current)),
+    icon = &quot;fas fa-coins&quot;,
+    caption = &quot;Gold Value&quot;
+  )
+})</code></pre>
+<pre class="r"><code>renderValueBox({
+  valueBox(
+    value = dollar(round(input$silver_oz * silver_current)),
+    icon = &quot;fas fa-coins&quot;,
+    caption = &quot;Silver Value&quot;
+  )
+})</code></pre>
+<p>The <code>valueBox</code> function is wrapped inside the <code>renderValueBox</code> function so that the value box
+is properly scaled to the size of the browser window. The <code>value</code> argument to <code>valueBox</code> is the
+main content displayed. In this case, the value argument is set to
+the number of ounces of gold and silver
+inputed by the user multiplied by current prices fetched from Quandl.</p>
+<p>The <code>dollar</code> function
+comes from the <code>scales</code> package and adds the dollar sign formatting. Also, the <code>icon</code> argument
+specifies an optional icon to be displayed in the value box. If you don’t like the one I
+selected, you can find another one <a href="https://fontawesome.com/icons?d=gallery">here</a>.</p>
+</div>
+<div id="portfolio-value-over-time" class="section level1">
+<h1>Portfolio Value Over Time</h1>
+<p>The value boxes display the current value of your precious metals holdings, but what about
+the historical value?</p>
+<p>The final row graphs the total value of gold and silver over time with <code>ggplot</code>. When the app
+first loads, both the <code>silver_oz</code> and <code>gold_oz</code> inputs are set to 0 and the plot should be
+empty. The first line of code inside <code>renderPlot</code> ensures nothing is plotted when
+both inputs are 0. If either of the inputs are non-zero, a data frame is created with the date
+and total value by metal. The data are reshaped long with <code>gather</code>.</p>
+<p>If the user opts to combine the gold and silver line graphs, we need to collapse sum
+the value column by date. If the user does not opt to combine (the default), then the total gold
+and silver value over time is plotted separately by setting <code>color = source</code>. You can choose the
+colors for gold and silver with <code>scale_color_manual</code>.</p>
+<p>The last bit of code adds a lower limit (no negative values)
+and formatting to the y-axis to make it prettier. I’m a fan
+of <code>theme_minimal()</code> and use it for all my plots created with <code>ggplot</code>. Finally,
+the two arguments passed to
+<code>theme()</code> turn off the legend title and increase the text size. Make sure to call</p>
+<pre class="r"><code>renderPlot({
+  if (input$silver_oz == 0 &amp; input$gold_oz == 0) return()
+  portfolio_value &lt;- data.frame(
+    &quot;gold&quot; = input$gold_oz * portfolio$`USD (AM)`,
+    &quot;silver&quot; = input$silver_oz * portfolio$USD,
+    &quot;date&quot; = gold$Date
+  ) %&gt;%
+    gather(key = &quot;source&quot;, value = &quot;value&quot;, gold, silver)
+  if (input$combine) {
+    portfolio_value &lt;- portfolio_value %&gt;% 
+      group_by(date) %&gt;% 
+      summarise(value = sum(value))
+    p &lt;- ggplot(portfolio_value, aes(x = date, y = value))
+  } else {
+    p &lt;- ggplot(portfolio_value, aes(x = date, y = value, color = source)) +
+      scale_color_manual(values = c(&quot;gold&quot; = &quot;#f5b342&quot;, &quot;silver&quot; = &quot;#C0C0C0&quot;))
+  }
+  
+  p + 
+    geom_line(size = 1) +
+    scale_y_continuous(
+      limits = c(0, NA), 
+      name = &quot;Total Value&quot;, 
+      labels = dollar_format()
+    ) +
+    scale_x_date(name = &quot;Date&quot;) +
+    theme_minimal() +
+    theme(
+      legend.title = element_blank(),
+      text = element_text(size = 16)
+    ) 
+})</code></pre>
+</div>
+<div id="deploy" class="section level1">
+<h1>Deploy</h1>
+<p>You can create a free <a href="https://www.shinyapps.io">shinyapps.io</a> account to deploy
+the dashboard to the wild wild web. After you create an account, install the <code>rsconnect</code>
+package and click the
+blue publish button (next to the run button) in RStudio and you’re done! The free account
+does have limits that you can read about at the link above.</p>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>You should now have a fully functioning app to track your gold and silver portfolio.
+Enter in your own gold and silver holdings and restore the state of the dashboard at
+any time by creating a bookmark.</p>
+<p>I hope you enjoyed this post! Please let me know what you think in the comments below.</p>
+</div>
