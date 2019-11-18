@@ -10,14 +10,10 @@ tags:
   - bayesian
 ---
 
-Bayesian statistics allows one to incorporate prior information
+With Bayesian statistics we can incorporate prior information
 into a model.  That means that if we have a priori information about
 parameters in our model (and we usually do), we can actually use that
-information!
-
-Okay, but how?
-
-Simple, we just specify prior probability distributions for our model
+information! We just need to specify prior probability distributions for our model
 parameters. 
 
 For example, we know that a binary variable for whether a field is organic
@@ -67,7 +63,8 @@ to fit very complex Bayesian models in `Stan` with ease. The author is also very
 to issues users raise on Github.
 
 For a thorough and insightful introduction to Bayesian statistics, try Richard McElreath's
-[_Statistical Rethinking_](https://www.crcpress.com/statistical-rethinking-a-bayesian-course-with-examples-in-r-and-stan/mcelreath/p/book/9781482253443). This is a textbook, but is a very
+[_Statistical Rethinking_](https://www.crcpress.com/statistical-rethinking-a-bayesian-course-with-examples-in-r-and-stan/mcelreath/p/book/9781482253443). 
+This is a textbook, but it is a very
 good textbook with R code examples and thoughtful explanations throughout. The textbook
 also has an accompanying 
 [YouTube series](https://www.youtube.com/channel/UCNJK6_DZvcMqNSzQdEkzvzA) 
