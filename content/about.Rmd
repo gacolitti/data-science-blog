@@ -6,7 +6,7 @@ slug: about
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE, echo = FALSE, out.width = "100%")
+knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 ```
 
 ```{r}
