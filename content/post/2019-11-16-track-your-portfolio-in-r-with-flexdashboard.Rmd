@@ -38,7 +38,8 @@ gold and silver prices, then display the value of a dynamic number of ounces of 
 by the user. 
 
 Before we get started, you might want to clone the 
-[Github repo](https://github.com/gacolitti/gold-silver-portfolio) for this project.
+[Github repo](https://github.com/gacolitti/gold-silver-portfolio) for this project or view
+the [finished app](https://gacolitti.shinyapps.io/gold-silver-portfolio/).
 
 # Getting Started
 
