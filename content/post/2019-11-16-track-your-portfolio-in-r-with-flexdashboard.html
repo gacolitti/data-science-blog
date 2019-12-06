@@ -71,11 +71,10 @@ output:
 set the Quandl API key. You can name this chunk <code>setup</code>.</p>
 <p>If you plan on sharing your code or tracking it on <code>github</code>,
 then you shoudn’t store the API token in your code. One workaround is to create a new file called
-<code>.Renviron</code> in your home directory on your computer and in the first line type <code>QUANDL_API_KEY=your_token</code>,
-where you replace <code>your_token</code> with the API token from your own personal Quandl account you
-created. This file is loaded each time you open RStudio and creates enviornmental variables
-in your R session that can be referrenced with <code>Sys.getenv</code>. In this way, you get easy access
-to your API token but do not risk accidently sharing it with unathorized users.</p>
+<code>.Renviron</code> in your project directory and in the first line add <code>QUANDL_API_KEY=api_key</code>.
+Be sure to add <code>.Renviron</code> to <code>.gitignore</code>. Then, to make sure
+that the environmental variable is available in the app use <code>readRenviron()</code>. This is important
+if you plan to publish to shinyapps.io.</p>
 <p>Note also the code that enables bookmarking. This is a cool feature in <code>shiny</code> that allows users to store
 the state of the dashboard in the URL which can be restored at a later time.</p>
 <pre class="r"><code>library(flexdashboard)
@@ -84,6 +83,7 @@ library(Quandl)
 library(scales)
 library(tidyverse)
 
+readRenviron(&quot;.Renviron&quot;)
 shiny::enableBookmarking(store = &#39;url&#39;)
 Quandl.api_key(Sys.getenv(&#39;QUANDL_API_KEY&#39;))</code></pre>
 </div>
