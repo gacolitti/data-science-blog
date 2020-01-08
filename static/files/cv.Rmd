@@ -15,10 +15,11 @@ Contact Info {#contact}
 --------------------------------------------------------------------------------
 
 - <i class="fa fa-envelope"></i> g.a.colitti@gmail.com
-- <i class="fa fa-github"></i> [github.com/gacolitti](https://github.com/gacolitti)
-- <i class="fab fa-blogger-b"></i> [giovannicolitti.com](https://giovannicolitti.com)
-- <i class="fa fa-linkedin"></i> [Linkedin](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)
 - <i class="fa fa-phone"></i> +1 (661) 546-3491
+- <i class="fa fa-github"></i> [https://github.com/gacolitti](https://github.com/gacolitti)
+- <i class="fab fa-blogger-b"></i> [https://GiovanniColitti.com](https://giovannicolitti.com)
+- <i class="fa fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)
+- <i class="fab fa-stack-overflow"></i> [stackoverflow](https://stackoverflow.com/users/9489566/giovanni-colitti?tab=profile)
 
 Skills {#skills}
 --------------------------------------------------------------------------------
@@ -63,14 +64,6 @@ Data Scientist
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-### California State University, Channel Islands 
-
-B.A. in Economics (3.8 GPA)
-
-Camarillo, CA
-
-2016
-
 ### National Taiwan University
 
 M.S. in Agricultural Economics (4.0 GPA)
@@ -78,6 +71,14 @@ M.S. in Agricultural Economics (4.0 GPA)
 Taipei, Taiwan
 
 2018
+
+### California State University, Channel Islands 
+
+B.A. in Economics (3.8 GPA)
+
+Camarillo, CA
+
+2016
 
 Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
@@ -100,7 +101,7 @@ Bakersfield, CA
 - Used Docker and ShinyProxy to publish applications and reports.
 - Communicated analytical methods and results to the entire executive team.
 
-### Data Scientist Intern
+### Data Analyst Intern
 
 Small Business Development Center 
 
@@ -126,7 +127,28 @@ Camarillo, CA
 - Created data visualizations in Excel and wrote literature reviews of scientific articles 
 related to Chinese & Indian stock, currency, and debt markets. 
 
-Academic Honors and Awards {data-icon=file}
+<br>
+
+Selected Research {data-icon=file}
+--------------------------------------------------------------------------------
+
+### Do Concealed Firearms Decrease Crime? 
+
+Analyzing the effects of concealed firearms on crime in the United States.
+
+N/A
+
+2018
+
+### Do HEVs Cause More Cyclist & Pedestrian Injuries?
+
+Estimating the effects of hybrid and electric vehicles on pedestrian safety.
+
+N/A
+
+2018
+
+Academic Honors and Awards {data-icon=trophy}
 --------------------------------------------------------------------------------
 
 ### Thesis Competition First Place Prize
@@ -153,7 +175,7 @@ N/A
 
 2016
 
-### Wange Family Scholarship
+### Wang Family Scholarship
 
 Merit scholarship for international study in Taiwan & Mainland China.
 
