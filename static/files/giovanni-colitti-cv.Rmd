@@ -61,8 +61,6 @@ Coursework {#skills}
 - Quantitative Methods
 - Applied Microeconomics
 - Advanced Macroeconomics
-- Efficiency and Productivity Analysis
-
 
 Main
 ================================================================================
