@@ -53,13 +53,15 @@ Coursework {#skills}
 --------------------------------------------------------------------------------
 
 - R Programming (I/II)
-- Data Analysis in R
-- Functional Programming in R
-- Bayesian Statistics
-- Business Analytics
+- Ecological Data Analysis in R
+- Quantitative Business Science
 - Econometrics (I/II)
 - Financial Econometrics
 - Web Applications in R with Shiny
+- Quantitative Methods
+- Applied Microeconomics
+- Advanced Macroeconomics
+- Efficiency and Productivity Analysis
 
 
 Main
