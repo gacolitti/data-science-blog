@@ -109,8 +109,8 @@ Bakersfield, CA
 - Set up API connections and created API wrapper R packages. 
 - Created Grimmway R package used internally to facilitate common programming tasks.
 - Used Docker/DockerHub and ShinyProxy to publish applications and reports online. 
-- Communicated analytical methods and results to the entire executive team.
 - Performed sample size calculations and provided spatial sampling recommendations.
+- Communicated analytical methods and results to the entire executive team.
 
 ### Data Analyst Intern
 
@@ -138,6 +138,7 @@ Camarillo, CA
 - Created visualizations in Stata and wrote literature reviews of scientific articles 
 related to Chinese & Indian stock, currency, and debt markets. 
 
+\pagebreak
 
 Selected Research {data-icon=file}
 --------------------------------------------------------------------------------
