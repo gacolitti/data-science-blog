@@ -30,8 +30,8 @@ Contact Info {#contact}
 - <i class="fa fa-phone"></i> +1 (661) 546-3491
 - <i class="fa fa-github"></i> [https://github.com/gacolitti](https://github.com/gacolitti)
 - <i class="fab fa-blogger-b"></i> [https://GiovanniColitti.com](https://giovannicolitti.com)
-- <i class="fa fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)
-- <i class="fab fa-stack-overflow"></i> [stackoverflow](https://stackoverflow.com/users/9489566/giovanni-colitti?tab=profile)
+- <i class="fa fa-linkedin"></i> [https://tinyurl.com/yfrrpukt](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)
+- <i class="fab fa-stack-overflow"></i> [https://tinyurl.com/twxsa92](https://stackoverflow.com/users/9489566/giovanni-colitti?tab=profile)
 
 Skills {#skills}
 --------------------------------------------------------------------------------
@@ -67,8 +67,6 @@ Main
 
 Giovanni Colitti {#title}
 --------------------------------------------------------------------------------
-
-Data Scientist
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
