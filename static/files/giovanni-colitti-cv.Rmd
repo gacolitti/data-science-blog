@@ -47,7 +47,7 @@ httr, xml2, devtools, rsample, recipes, shinydashboard, flexdashboard, dbplyr, D
 Stata, SQL, Git, Docker 
 
 - **Languages**:
-Chinese
+English, Chinese
 
 Coursework {#skills}
 --------------------------------------------------------------------------------
@@ -105,8 +105,7 @@ Bakersfield, CA
 - Developed custom functions in R for cross-validation of time-series data with irregular time slices.
 - Created Shiny apps and dashboards to visualize projections, implement dynamic optimization problems, and generate automated reports.
 - Managed database tables using R and SQL.
-- Scraped open source weather data online. 
-- Set up API connections and created API wrapper R packages. 
+- Scraped open source weather data online and set up API connections. 
 - Created Grimmway R package used internally to facilitate common programming tasks.
 - Used Docker/DockerHub and ShinyProxy to publish applications and reports online. 
 - Performed sample size calculations and provided spatial sampling recommendations.
