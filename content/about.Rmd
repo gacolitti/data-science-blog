@@ -14,13 +14,12 @@ knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 knitr::include_graphics("/images/tea-shop-mao-kong.jpg")
 ```
 
-
-I am passionate about R programming, predictive modeling, causal analysis, linear programming, 
-data visualizations, and Shiny app development. 
-
 While my background is in Economics and policy
 analysis, much of my focus nowadays is on machine learning/prediction in an enterprise 
 context.
+
+I am also interested in causal analysis, linear programming, 
+data visualizations, and Shiny app development. 
 
 If you are interested in connecting, please reach out on [LinkedIn](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)! 
 I love making new friends in the data science community.
