@@ -3,6 +3,7 @@ title: About
 author: Giovanni Colitti
 date: '2019-11-10'
 slug: about
+disable_comments: true
 ---
 
 ```{r setup, include=FALSE}
