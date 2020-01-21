@@ -14,12 +14,14 @@ knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 knitr::include_graphics("/images/tea-shop-mao-kong.jpg")
 ```
 
-While my background is in Economics and policy
-analysis, much of my focus nowadays is on machine learning/prediction in an enterprise 
-context.
+I am passionate about using unique datasets to answer interesting questions. 
 
-I am also interested in causal analysis, linear programming, 
-data visualizations, and Shiny app development. 
+My background is in
+Economics and policy analysis, and I have experience conducting original research in criminology,
+transportion safety, and agriculture.
+
+Since August 2018, I have been working as a data scientist at a large agricultural company where
+my focus is on machine learning, linear programming, and causal analysis. 
 
 If you are interested in connecting, please reach out on [LinkedIn](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)! 
 I love making new friends in the data science community.
