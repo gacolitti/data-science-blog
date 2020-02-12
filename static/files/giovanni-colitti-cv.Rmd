@@ -7,7 +7,7 @@ output:
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
 # uncomment this line to produce HTML and PDF in RStudio:
-# knit: pagedown::chrome_print
+knit: pagedown::chrome_print
 ---
 
 
@@ -142,13 +142,15 @@ related to Chinese & Indian stock, currency, and debt markets.
 Selected Research {data-icon=file}
 --------------------------------------------------------------------------------
 
-### Do Concealed Firearms Decrease Crime? 
+### Do Concealed Firearms Decrease Crime? An Analysis Using Active Concealed Firearm License Data in the United States
 
-Used a unique dataset on county-level concealed firearms permits and applied two-stage least squares estimation & censored regression models to show that concealed firearms do not decrease crime.
+Used a unique dataset on county-level concealed firearms permits and applied two-stage least squares estimation & poisson regression models to show that concealed firearms do not decrease crime.
 
 N/A
 
 2018
+
+DOI: http://dx.doi.org/10.6342/NTU201800993
 
 ### Do HEVs Cause More Cyclist & Pedestrian Injuries?
 
