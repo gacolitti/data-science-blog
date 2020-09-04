@@ -59,11 +59,11 @@ and selecct the `flexdashboard` template. (You might need to restart RStudio if 
 `flexdashboard`)
 
 ```{r, eval = TRUE, echo = FALSE}
-knitr::include_graphics('/images/add-file-rstudio.jpg')
+knitr::include_graphics('/images/add-file-rstudio.jpg', error = FALSE)
 ```
 
 ```{r, eval = TRUE, echo = FALSE}
-knitr::include_graphics('/images/select-flexdashboard-template.jpg')
+knitr::include_graphics('/images/select-flexdashboard-template.jpg', error = FALSE)
 ```
 
 # YAML
