@@ -77,7 +77,7 @@ As a bonus, you can add a social media link and source code in the menu.
 
 After you're finished, it should look like this:
 
-```{r}
+```{r, eval=FALSE}
 ---
 title: "Gold & Silver Portfolio"
 runtime: shiny
@@ -320,4 +320,3 @@ Enter in your own gold and silver holdings and restore the state of the dashboar
 any time by creating a bookmark. 
 
 I hope you enjoyed this post! Please let me know what you think in the comments below.
-
