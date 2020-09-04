@@ -71,7 +71,7 @@ Giovanni Colitti {#title}
 Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
-### Data Scientist
+### Jr Data Scientist
 
 Grimmway
 
