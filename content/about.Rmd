@@ -1,7 +1,7 @@
 ---
 title: About
 author: Giovanni Colitti
-date: '2019-11-10'
+date: '2022-01-03'
 slug: about
 disable_comments: true
 ---
@@ -10,18 +10,19 @@ disable_comments: true
 knitr::opts_chunk$set(echo = FALSE, out.width = "100%")
 ```
 
-```{r}
-knitr::include_graphics("/images/tea-shop-mao-kong.jpg")
-```
-
 I am passionate about using unique datasets to answer interesting questions. 
+More recently, I've grown fond of building web apps in R.
 
-My background is in
-Economics and policy analysis, and I have experience conducting original research in criminology,
-transportion safety, and agriculture.
+My background is in Economics and policy analysis, and I have experience
+conducting original research in criminology, transportation safety, and
+agriculture.
 
-Since August 2018, I have been working as a data scientist at a large agricultural company where
-my focus is on machine learning, linear programming, and causal analysis. 
+In August 2018, I began working as a data scientist at a large agricultural 
+company where my focus was on machine learning, linear programming, and 
+causal analysis. 
+
+I'm now working at a leading AgTech company, building apps and tools 
+to help scale our rapidly growing business.
 
 If you are interested in connecting, please reach out on [LinkedIn](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)! 
-I love making new friends in the data science community.
+I love making new friends in the data science & R communities.

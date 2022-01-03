@@ -40,19 +40,20 @@ we use <code>quandl</code>, you will need to <a href="https://www.quandl.com/sig
 for a free account and get an API access token.</p>
 <p>The following code installs these packages:</p>
 <pre class="r"><code>install.packages(c(&#39;shiny&#39;, &#39;flexdashboard&#39;, &#39;quandl&#39;, &#39;tidyverse&#39;, &#39;scales&#39;))</code></pre>
-<p>Then, whenever you want to create a new <code>flexdashboard</code> file, just click the icon in the top left
-and selecct the <code>flexdashboard</code> template. (You might need to restart RStudio if you just installed
-<code>flexdashboard</code>)</p>
+<p>Then, whenever you want to create a new <code>flexdashboard</code> file, just click the
+icon in the top left and select the <code>flexdashboard</code> template.
+(You might need to restart RStudio if you just installed <code>flexdashboard</code>)</p>
 <p><img src="/images/add-file-rstudio.jpg" width="100%" /></p>
 <p><img src="/images/select-flexdashboard-template.jpg" width="100%" /></p>
 </div>
 <div id="yaml" class="section level1">
 <h1>YAML</h1>
-<p>The top of the newly opened <code>.Rmd</code> file includes information on how to build the app. You can
-set the <code>title</code> to anything you like, of course. The <code>runtime</code> option is set to <code>shiny</code> but there
-are other options, such as <code>shiny_prerendered</code>, that I won’t go into. Lastly, the <code>output</code> is
-where we tell the machine we want a <code>flex_dashboard</code> with rows (instead of columns) and we want
-rows to fill the screen (instead of scroll).
+<p>The top of the newly opened <code>.Rmd</code> file includes information on how to build the
+app. You can set the <code>title</code> to anything you like, of course. The <code>runtime</code>
+option is set to <code>shiny</code> but there are other options, such as
+<code>shiny_prerendered</code>, that I won’t go into. Lastly, the <code>output</code> is where we tell
+the machine we want a <code>flex_dashboard</code> with rows (instead of columns) and we
+want rows to fill the screen (instead of scroll).
 As a bonus, you can add a social media link and source code in the menu.</p>
 <p>After you’re finished, it should look like this:</p>
 <pre class="r"><code>---
@@ -68,16 +69,17 @@ output:
 </div>
 <div id="setup" class="section level1">
 <h1>Setup</h1>
-<p>In the first code chunk we load the required packages, enable bookmarking (more on that later), and
-set the Quandl API key. You can name this chunk <code>setup</code>.</p>
-<p>If you plan on sharing your code or tracking it on <code>github</code>,
-then you shoudn’t store the API token in your code. One workaround is to create a new file called
-<code>.Renviron</code> in your project directory and in the first line add <code>QUANDL_API_KEY=api_key</code>.
-Be sure to add <code>.Renviron</code> to <code>.gitignore</code>. Then, to make sure
-that the environmental variable is available in the app use <code>readRenviron()</code>. This is important
-if you plan to publish to shinyapps.io.</p>
-<p>Note also the code that enables bookmarking. This is a cool feature in <code>shiny</code> that allows users to store
-the state of the dashboard in the URL which can be restored at a later time.</p>
+<p>In the first code chunk we load the required packages, enable bookmarking (more
+on that later), and set the Quandl API key. You can name this chunk <code>setup</code>.</p>
+<p>If you plan on sharing your code or tracking it on <code>github</code>, then you shoudn’t
+store the API token in your code. One workaround is to create a new file called
+<code>.Renviron</code> in your project directory and in the first line add
+<code>QUANDL_API_KEY=api_key</code>. Be sure to add <code>.Renviron</code> to <code>.gitignore</code>. Then, to
+make sure that the environmental variable is available in the app use
+<code>readRenviron()</code>. This is important if you plan to publish to shinyapps.io.</p>
+<p>Note also the code that enables bookmarking. This is a cool feature in <code>shiny</code>
+that allows users to store the state of the dashboard in the URL which can be
+restored at a later time.</p>
 <pre class="r"><code>library(flexdashboard)
 library(shiny)
 library(Quandl)

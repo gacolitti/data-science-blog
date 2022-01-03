@@ -78,7 +78,7 @@ Fieldin
 
 Remote
 
-2020
+Current - 2020
 
 - Developed Shiny apps to extract / summarize data,
   explore data through interactive maps, and create PowerPoint presentations.
@@ -96,7 +96,7 @@ Grimmway
 
 Bakersfield, CA
 
-2018
+2020 - 2018
 
 - Trained ML models in R to forecast important business metrics 
   including sales and yield; forecasts improved predictive accuracy 
@@ -118,7 +118,7 @@ Small Business Development Center
 
 Camarillo, CA
 
-2015
+2015 - 2016
 
 - Analyzed small business metrics, such as revenue per employee, to predict which 
   clients have the highest risk of bankruptcy. 
@@ -187,6 +187,8 @@ N/A
 Used a difference-in-differences (DiD) event study model and a large transaction-level dataset to quantify the casual effect of Hurricane Morakot on vegetable prices in Taiwan, adding weight to the literature that claims weather is oftentimes the most important driver of local agricultural prices.
 
 N/A
+
+2018
 
 Academic Honors and Awards {data-icon=trophy}
 --------------------------------------------------------------------------------
