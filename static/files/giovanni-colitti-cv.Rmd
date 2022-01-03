@@ -37,13 +37,14 @@ Skills {#skills}
 --------------------------------------------------------------------------------
 
 - **Analytical Methods**: 
-regression, classification, feature engineering, linear
+regression, classification, clustering, feature engineering, linear
 programming and optimization methods, causal analysis, Bayesian and Monte
 Carlo methods
 
 - **Coding**:
-R (caret, fable, brms, rsample, recipes, lpSolve, shiny, data.table, dplyr, ggplot, plotly, rmarkdown, 
-purrr, devtools, DBI), 
+R (shiny, data.table, dplyr, ggplot, plotly, rmarkdown, leaflet, 
+tidymodels, fable, brms, lpSolve, 
+purrr, devtools), 
 Stata, SQL, Git, Docker 
 
 - **Languages**:
@@ -71,26 +72,43 @@ Giovanni Colitti {#title}
 Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
-### Jr Data Scientist
+### Business Intelligence Analyst 
+
+Fieldin
+
+Remote
+
+2020
+
+- Developed Shiny apps to extract / summarize data,
+  explore data through interactive maps, and create PowerPoint presentations.
+- Predicted machine unloading events with 90% accuracy.
+- Designed flexible visualizations and tables of customer KPIs. 
+- Built a framework for estimating customer costs.
+- Improved standardization, reproducibility, and audibility of all information 
+  by carefully defining metric conversions & formatting.
+- Used Docker and ShinyProxy to publish applications and reports. 
+- Managed database tables using R and SQL.
+
+### Jr. Data Scientist
 
 Grimmway
 
 Bakersfield, CA
 
-2018 - Current
+2018
 
-- Trained machine learning models in R to forecast important business metrics including sales and 
-  field-level yield; forecasts improved predictive accuracy by 30-50% over previous methods.
-- Implemented linear programming problems in R to optimize planting and harvesting activities.
+- Trained ML models in R to forecast important business metrics 
+  including sales and yield; forecasts improved predictive accuracy 
+  by 30-50% over previous methods.
+- Implemented linear programming problems in R to optimize planting and 
+  harvesting activities.
 - Performed complex data cleaning and exploration on large datasets. 
 - Analyzed field trial data in R using appropriate statistical methods.
-- Developed an R package for cross-validation of time-series data with irregular 
-  time slices (tidyroll).
-- Created Shiny apps and dashboards to visualize forecasts, implement dynamic optimization problems, 
-  and generate automated reports.
-- Managed database tables using R and SQL.
-- Created an R package to interface with the CoAgMET weather network API (coagmetr).
-- Used Docker and ShinyProxy to publish applications and reports internally. 
+- Developed two R packages for cross-validation of time-series data with irregular 
+  time slices (tidyroll), and to interface with the CoAgMET weather network API (coagmetr).
+- Created Shiny apps to visualize forecasts, implement constrained optimization 
+  problems, and generate automated reports.
 - Performed sample size calculations and provided spatial sampling recommendations.
 - Communicated analytical methods and results to the executive team.
 
@@ -100,12 +118,12 @@ Small Business Development Center
 
 Camarillo, CA
 
-2015 - 2016
+2015
 
 - Analyzed small business metrics, such as revenue per employee, to predict which 
-clients have the highest risk of bankruptcy. 
+  clients have the highest risk of bankruptcy. 
 - Used model predictions to efficiently allocate limited consulting resources to assist at-risk 
-businesses.
+  businesses.
 - Trained executive team in statistical methods.
 
 ### Research Assistant
@@ -118,7 +136,9 @@ Camarillo, CA
 
 - Collected and cleaned data from various online sources using Stata programming. 
 - Created visualizations in Stata and wrote literature reviews of scientific articles 
-related to Chinese & Indian stock, currency, and debt markets. 
+  related to Chinese & Indian stock, currency, and debt markets. 
+  
+\pagebreak
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
@@ -139,7 +159,6 @@ Camarillo, CA
 
 2016
 
-\pagebreak
 
 Selected Research {data-icon=file}
 --------------------------------------------------------------------------------
