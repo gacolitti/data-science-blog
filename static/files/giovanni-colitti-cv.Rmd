@@ -78,9 +78,9 @@ Fieldin
 
 Remote
 
-Current - 2020
+2020 - Current
 
-- Developed Shiny apps to extract / summarize data,
+- Developed Shiny apps to summarize data,
   explore data through interactive maps, and create PowerPoint presentations.
 - Predicted machine unloading events with 90% accuracy.
 - Designed flexible visualizations and tables of customer KPIs. 
@@ -96,7 +96,7 @@ Grimmway
 
 Bakersfield, CA
 
-2020 - 2018
+2018 - 2020
 
 - Trained ML models in R to forecast important business metrics 
   including sales and yield; forecasts improved predictive accuracy 
@@ -105,10 +105,12 @@ Bakersfield, CA
   harvesting activities.
 - Performed complex data cleaning and exploration on large datasets. 
 - Analyzed field trial data in R using appropriate statistical methods.
-- Developed two R packages for cross-validation of time-series data with irregular 
-  time slices (tidyroll), and to interface with the CoAgMET weather network API (coagmetr).
+- Developed {tidyroll}, an R package for performing cross-validation of time-series 
+  data with irregular time slices; and {coagmetr}, an R package used to interface 
+  with the CoAgMET weather network API.
 - Created Shiny apps to visualize forecasts, implement constrained optimization 
   problems, and generate automated reports.
+- Built object detection pipeline to generate carrot stand count estimates.
 - Performed sample size calculations and provided spatial sampling recommendations.
 - Communicated analytical methods and results to the executive team.
 
