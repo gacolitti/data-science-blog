@@ -90,7 +90,7 @@ Remote
 - Used Docker and ShinyProxy to publish applications and reports. 
 - Managed database tables using R and SQL.
 
-### Jr. Data Scientist
+### Data Scientist
 
 Grimmway
 
