@@ -44,7 +44,7 @@ Carlo methods
 - **Coding**:
 R (shiny, data.table, dplyr, ggplot, plotly, rmarkdown, leaflet, 
 tidymodels, fable, brms, lpSolve, 
-purrr, devtools), 
+purrr, devtools, golem, testthat, renv, shinytest), 
 Stata, SQL, Git, Docker 
 
 - **Languages**:
@@ -72,7 +72,7 @@ Giovanni Colitti {#title}
 Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
-### Business Intelligence Analyst 
+### Senior BI Analyst 
 
 Fieldin
 
@@ -80,15 +80,23 @@ Remote
 
 2020 - Current
 
-- Developed Shiny apps to summarize data,
-  explore data through interactive maps, and create PowerPoint presentations.
+- Developed Shiny app to perform interactive mapping of vast machine level data, animate machine movement
+  smoothly over time, and provide comprehensive contextual information.
+- Developed Shiny app to interactively create visualizations and tables,
+  and insert those (and other elements) into an arbitrary number of native PowerPoint slides;
+  A user survey revealed time-savings from the app of hours per week per user.
+- Created novel algorithm for counting harvest loads by analyzing distance patterns between 
+  harvesters and bankouts, with less than 5% error at the lowest level.
 - Predicted machine unloading events with 90% accuracy.
-- Designed flexible visualizations and tables of customer KPIs. 
 - Built a framework for estimating customer costs.
 - Improved standardization, reproducibility, and audibility of all information 
   by carefully defining metric conversions & formatting.
-- Used Docker and ShinyProxy to publish applications and reports. 
-- Managed database tables using R and SQL.
+- Used `{renv}` and `Docker` to control R package dependencies and Shiny app runtime
+  environments, the `{golem}` framework for R package style documentation, and `{shinytest}` 
+  for testing of apps.
+- Used ShinyProxy to publish applications and manage user access.
+- Created multiple internal R packages to facilitate database connections, data wrangling, and
+  other common programming tasks.
 
 ### Data Scientist
 
@@ -101,6 +109,7 @@ Bakersfield, CA
 - Trained ML models in R to forecast important business metrics 
   including sales and yield; forecasts improved predictive accuracy 
   by 30-50% over previous methods.
+- Built object detection pipeline to generate carrot stand count estimates.
 - Implemented linear programming problems in R to optimize planting and 
   harvesting activities.
 - Performed complex data cleaning and exploration on large datasets. 
@@ -110,7 +119,6 @@ Bakersfield, CA
   with the CoAgMET weather network API.
 - Created Shiny apps to visualize forecasts, implement constrained optimization 
   problems, and generate automated reports.
-- Built object detection pipeline to generate carrot stand count estimates.
 - Performed sample size calculations and provided spatial sampling recommendations.
 - Communicated analytical methods and results to the executive team.
 
@@ -122,15 +130,11 @@ Camarillo, CA
 
 2015 - 2016
 
-- Analyzed small business metrics, such as revenue per employee, to predict which 
-  clients have the highest risk of bankruptcy. 
-- Used model predictions to efficiently allocate limited consulting resources to assist at-risk 
-  businesses.
-- Trained executive team in statistical methods.
+- Used small business metrics to predict clients at risk of bankruptcy.
 
 ### Research Assistant
 
-California State Univeristy, Channel Islands
+California State University, Channel Islands
 
 Camarillo, CA
 
@@ -140,7 +144,6 @@ Camarillo, CA
 - Created visualizations in Stata and wrote literature reviews of scientific articles 
   related to Chinese & Indian stock, currency, and debt markets. 
   
-\pagebreak
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
