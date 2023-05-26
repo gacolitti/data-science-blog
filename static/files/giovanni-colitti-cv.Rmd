@@ -72,31 +72,39 @@ Giovanni Colitti {#title}
 Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
+
+### Data Scientist
+
+Apple - Cloud Services (contract)
+
+Remote
+
+2022 - Current
+
+- Helped create the cost model for K8s services at Apple and created a Shiny app used to 
+  visualize the cost model under different parameters.
+- Built tooling for automated K8s chargebacks used by finance.
+- Developed K8s usage reports for internal customers to improve transparency and efficiency. 
+- Analyzed workloads' usage patterns and performed scheduling simulations to make
+  recommendations on hardware configurations.
+- Created multiple internal R packages to facilitate working with Mosaic and Quip APIs.
+  
 ### Senior BI Analyst 
 
 Fieldin
 
 Remote
 
-2020 - Current
+2020 - 2022
 
-- Developed Shiny app to perform interactive mapping of vast machine level data, animate machine movement
-  smoothly over time, and provide comprehensive contextual information.
-- Developed Shiny app to interactively create visualizations and tables,
-  and insert those (and other elements) into an arbitrary number of native PowerPoint slides;
+- Developed Shiny app to perform interactive mapping of machine data
+- Developed Shiny app to interactively create visualizations and tables in PowerPoint slides;
   A user survey revealed time-savings from the app of hours per week per user.
-- Created novel algorithm for counting harvest loads by analyzing distance patterns between 
-  harvesters and bankouts, with less than 5% error at the lowest level.
+- Developed algorithm for counting harvest loads by analyzing distance patterns between 
+  harvesters and bankouts.
 - Predicted machine unloading events with 90% accuracy.
-- Built a framework for estimating customer costs.
-- Improved standardization, reproducibility, and audibility of all information 
-  by carefully defining metric conversions & formatting.
-- Used `{renv}` and `Docker` to control R package dependencies and Shiny app runtime
-  environments, the `{golem}` framework for R package style documentation, and `{shinytest}` 
-  for testing of apps.
+- Created framework for estimating customer costs.
 - Used ShinyProxy to publish applications and manage user access.
-- Created multiple internal R packages to facilitate database connections, data wrangling, and
-  other common programming tasks.
 
 ### Data Scientist
 
@@ -106,31 +114,16 @@ Bakersfield, CA
 
 2018 - 2020
 
-- Trained ML models in R to forecast important business metrics 
-  including sales and yield; forecasts improved predictive accuracy 
+- Trained ML models in R to forecast sales and yield; forecasts improved predictive accuracy 
   by 30-50% over previous methods.
 - Built object detection pipeline to generate carrot stand count estimates.
-- Implemented linear programming problems in R to optimize planting and 
-  harvesting activities.
-- Performed complex data cleaning and exploration on large datasets. 
+- Implemented LPs in R to optimize planting and harvesting activities.
 - Analyzed field trial data in R using appropriate statistical methods.
-- Developed {tidyroll}, an R package for performing cross-validation of time-series 
-  data with irregular time slices; and {coagmetr}, an R package used to interface 
-  with the CoAgMET weather network API.
-- Created Shiny apps to visualize forecasts, implement constrained optimization 
-  problems, and generate automated reports.
+- Developed an R package for performing cross-validation of time-series 
+  data with irregular time slices.
+- Created Shiny apps to visualize forecasts and implement constrained optimization problems.
 - Performed sample size calculations and provided spatial sampling recommendations.
 - Communicated analytical methods and results to the executive team.
-
-### Data Analyst Intern
-
-Small Business Development Center 
-
-Camarillo, CA
-
-2015 - 2016
-
-- Used small business metrics to predict clients at risk of bankruptcy.
 
 ### Research Assistant
 
@@ -140,7 +133,6 @@ Camarillo, CA
 
 2014
 
-- Collected and cleaned data from various online sources using Stata programming. 
 - Created visualizations in Stata and wrote literature reviews of scientific articles 
   related to Chinese & Indian stock, currency, and debt markets. 
   
@@ -181,7 +173,10 @@ DOI: http://dx.doi.org/10.6342/NTU201800993
 
 ### Do HEVs Cause More Cyclist & Pedestrian Injuries?
 
-Used logit model & large UK accident-level dataset to show that quieter electric vehicles significantly increase pedestrian accidents net of other covariates including speed limit and urbanization. Also used Bayesian methods (MCMC) to estimate the posterior distribution and check for non-normality in estimates.
+Used logit model & large UK accident-level dataset to show that quieter electric vehicles 
+significantly increase pedestrian accidents net of other covariates including speed limit and 
+urbanization. Also used Bayesian methods (MCMC) to estimate the posterior distribution and 
+check for non-normality in estimates.
 
 N/A
 
@@ -189,7 +184,10 @@ N/A
 
 ### Effect of Hurricane Morakot on Agricultural Prices in Taiwan
 
-Used a difference-in-differences (DiD) event study model and a large transaction-level dataset to quantify the casual effect of Hurricane Morakot on vegetable prices in Taiwan, adding weight to the literature that claims weather is oftentimes the most important driver of local agricultural prices.
+Used a difference-in-differences (DiD) event study model and a large transaction-level dataset 
+to quantify the casual effect of Hurricane Morakot on vegetable prices in Taiwan, adding weight 
+to the literature that claims weather is oftentimes the most important driver of local agricultural 
+prices.
 
 N/A
 
