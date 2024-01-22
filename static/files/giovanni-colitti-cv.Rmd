@@ -5,11 +5,13 @@ date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
     # set it to true for a self-contained HTML page but it'll take longer to render
-    self_contained: true
+    standalone: true
+    embed-resources: true
+    css: ['resume.css']
+    align: left
 # uncomment this line to produce HTML and PDF in RStudio:
 knit: pagedown::chrome_print
 ---
-
 
 ```{css, echo = FALSE}
 .pagedjs_page:not(:first-of-type) {
@@ -28,10 +30,10 @@ Contact Info {#contact}
 
 - <i class="fa fa-envelope"></i> g.a.colitti@gmail.com
 - <i class="fa fa-phone"></i> +1 (661) 546-3491
-- <i class="fa fa-github"></i> [https://github.com/gacolitti](https://github.com/gacolitti)
-- <i class="fab fa-blogger-b"></i> [https://GiovanniColitti.com](https://giovannicolitti.com)
+- <i class="fa fa-github"></i> [github.com/gacolitti](https://github.com/gacolitti)
 - <i class="fa fa-linkedin"></i> [https://tinyurl.com/yfrrpukt](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)
 - <i class="fab fa-stack-overflow"></i> [https://tinyurl.com/twxsa92](https://stackoverflow.com/users/9489566/giovanni-colitti?tab=profile)
+- <i class="fab fa-blogger-b"></i> [giovannicolitti.com](https://giovannicolitti.com)
 
 Skills {#skills}
 --------------------------------------------------------------------------------
@@ -42,26 +44,27 @@ programming and optimization methods, causal analysis, Bayesian and Monte
 Carlo methods
 
 - **Coding**:
-R (shiny, data.table, dplyr, ggplot, plotly, rmarkdown, leaflet, 
-tidymodels, fable, brms, lpSolve, 
-purrr, devtools, golem, testthat, renv, shinytest), 
-Stata, SQL, Git, Docker 
+R, SQL, Bash, Stata, Python
+
+- **R Packages**:
+dplyr, data.table, shiny, echarts4r, ompr, tidymodels, httr2
+
+- **Tools**:
+RStudio, Git, Docker, Google Cloud, VS Code
+
+- **Coursework**: <br>
+R Programming (I/II)  <br>
+Quantitative Business Science <br>
+Econometrics (I/II) <br>
+Web Applications in R with Shiny <br>
+Quantitative Methods <br>
+Applied Microeconomics <br>
+Advanced Macroeconomics <br>
+<!-- Ecological Data Analysis in R <br> -->
+<!-- Financial Econometrics <br> -->
 
 - **Languages**:
 English, Chinese
-
-Coursework {#skills}
---------------------------------------------------------------------------------
-
-- R Programming (I/II)
-- Ecological Data Analysis in R
-- Quantitative Business Science
-- Econometrics (I/II)
-- Financial Econometrics
-- Web Applications in R with Shiny
-- Quantitative Methods
-- Applied Microeconomics
-- Advanced Macroeconomics
 
 Main
 ================================================================================
@@ -69,73 +72,9 @@ Main
 Giovanni Colitti {#title}
 --------------------------------------------------------------------------------
 
-Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
+Experienced Data Scientist with a strong background in Economics, currently building tools to 
+drive insights and visibility into cloud infrastructure at Apple. 
 
-
-### Data Scientist
-
-Apple - Cloud Services (contract)
-
-Remote
-
-2022 - Current
-
-- Helped create the cost model for K8s services at Apple and created a Shiny app used to 
-  visualize the cost model under different parameters.
-- Built tooling for automated K8s chargebacks used by finance.
-- Developed K8s usage reports for internal customers to improve transparency and efficiency. 
-- Analyzed workloads' usage patterns and performed scheduling simulations to make
-  recommendations on hardware configurations.
-- Created multiple internal R packages to facilitate working with Mosaic and Quip APIs.
-  
-### Senior BI Analyst 
-
-Fieldin
-
-Remote
-
-2020 - 2022
-
-- Developed Shiny app to perform interactive mapping of machine data
-- Developed Shiny app to interactively create visualizations and tables in PowerPoint slides;
-  A user survey revealed time-savings from the app of hours per week per user.
-- Developed algorithm for counting harvest loads by analyzing distance patterns between 
-  harvesters and bankouts.
-- Predicted machine unloading events with 90% accuracy.
-- Created framework for estimating customer costs.
-- Used ShinyProxy to publish applications and manage user access.
-
-### Data Scientist
-
-Grimmway
-
-Bakersfield, CA
-
-2018 - 2020
-
-- Trained ML models in R to forecast sales and yield; forecasts improved predictive accuracy 
-  by 30-50% over previous methods.
-- Built object detection pipeline to generate carrot stand count estimates.
-- Implemented LPs in R to optimize planting and harvesting activities.
-- Analyzed field trial data in R using appropriate statistical methods.
-- Developed an R package for performing cross-validation of time-series 
-  data with irregular time slices.
-- Created Shiny apps to visualize forecasts and implement constrained optimization problems.
-- Performed sample size calculations and provided spatial sampling recommendations.
-- Communicated analytical methods and results to the executive team.
-
-### Research Assistant
-
-California State University, Channel Islands
-
-Camarillo, CA
-
-2014
-
-- Created visualizations in Stata and wrote literature reviews of scientific articles 
-  related to Chinese & Indian stock, currency, and debt markets. 
-  
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
@@ -156,6 +95,69 @@ Camarillo, CA
 
 2016
 
+Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+
+### Data Scientist
+
+Apple - Cloud Services (contract)
+
+Remote
+
+2022 - Current
+
+- Contributed to the development of a Kubernetes cost model for the leadership team, wrote an API 
+  to facilitate the extraction of cost information from the model, and designed a Shiny app for 
+  visualization and counterfactual analysis.
+- Automated tooling for customer chargebacks and built tools to project Kubernetes quota 
+  clawbacks, streamlining reporting and planning processes.
+- Developed and presented interactive Kubernetes usage reports, enhancing internal customer 
+  visibility and efficiency.
+- Led the optimization of BigQuery table schemas and pipelines for trillions of rows of data, 
+  reducing query costs by over 90%.
+
+  
+### Senior Business Intelligence Analyst 
+
+Fieldin
+
+Remote
+
+2020 - 2022
+
+- Developed a Shiny app for interactive creation of visualizations and tables in PowerPoint slides, 
+  saving users hours per week as revealed by a user survey.
+- Created an algorithm for counting harvest loads by analyzing distance patterns, achieving 90% 
+  prediction accuracy.
+- Established a framework for estimating customer costs, aiding in strategic planning.
+- Developed a Shiny app for interactive mapping of machine data and additional apps for ad hoc 
+  report creation, supporting the customer success team.
+- Managed database tables serving as the backend for the apps used in customer success team's 
+  reporting.
+- Created and managed a platform for developing and publishing web applications using ShinyProxy.
+
+### Data Scientist
+
+Grimmway
+
+Bakersfield, CA
+
+2018 - 2020
+
+- Developed machine learning models to improve sales and yield forecasts by 30-50% over previous 
+  methods.
+- Built a YOLO v5 object detection pipeline to generate carrot stand count estimates with 95% 
+  accuracy, dramatically decreasing costs.
+- Created linear programming models to optimize planting and harvesting, maximizing yield and 
+  meeting sales demand.
+- Developed an R package for time-series cross-validation and Shiny apps for visualization and 
+  optimization.
+- Analyzed research trial data, performed sample size calculations, and provided spatial sampling 
+  recommendations to the agronomy team.
+
+
+\pagebreak
 
 Selected Research {data-icon=file}
 --------------------------------------------------------------------------------
@@ -212,7 +214,7 @@ N/A
 
 2016
 
-### Program Honors in Ecnomomics
+### Program Honors in Economics
 
 Selected by CSUCI Economics Department faculty for outstanding achievement.
 
