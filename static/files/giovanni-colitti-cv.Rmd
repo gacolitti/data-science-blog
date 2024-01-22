@@ -6,21 +6,10 @@ output:
   pagedown::html_resume:
     # set it to true for a self-contained HTML page but it'll take longer to render
     standalone: true
-    embed-resources: true
     css: ['resume.css']
-    align: left
 # uncomment this line to produce HTML and PDF in RStudio:
 knit: pagedown::chrome_print
 ---
-
-```{css, echo = FALSE}
-.pagedjs_page:not(:first-of-type) {
-  --sidebar-width: 0rem;
-  --sidebar-background-color: #ffffff;
-  --main-width: calc(var(--content-width) - var(--sidebar-width));
-  --decorator-horizontal-margin: 0.2in;
-}
-```
 
 Aside
 ================================================================================
@@ -72,6 +61,7 @@ Main
 Giovanni Colitti {#title}
 --------------------------------------------------------------------------------
 
+<br>
 Experienced Data Scientist with a strong background in Economics, currently building tools to 
 drive insights and visibility into cloud infrastructure at Apple. 
 
@@ -107,11 +97,11 @@ Remote
 
 2022 - Current
 
-- Contributed to the development of a Kubernetes cost model for the leadership team, wrote an API 
+- Contributed to the development of a Kubernetes cost model, wrote an API 
   to facilitate the extraction of cost information from the model, and designed a Shiny app for 
   visualization and counterfactual analysis.
-- Automated tooling for customer chargebacks and built tools to project Kubernetes quota 
-  clawbacks, streamlining reporting and planning processes.
+- Automated tooling for customer chargebacks and built tools to estimate Kubernetes quota 
+  clawbacks for presentations to senior leadership.
 - Developed and presented interactive Kubernetes usage reports, enhancing internal customer 
   visibility and efficiency.
 - Led the optimization of BigQuery table schemas and pipelines for trillions of rows of data, 
