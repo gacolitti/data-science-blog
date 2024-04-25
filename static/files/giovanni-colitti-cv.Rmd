@@ -29,7 +29,6 @@ Contact Info {#contact}
 --------------------------------------------------------------------------------
 
 - <i class="fa fa-envelope"></i> g.a.colitti@gmail.com
-- <i class="fa fa-phone"></i> +1 (661) 546-3491
 - <i class="fa fa-github"></i> [github.com/gacolitti](https://github.com/gacolitti)
 - <i class="fa fa-linkedin"></i> [https://tinyurl.com/yfrrpukt](https://www.linkedin.com/in/giovanni-colitti-17821b6b/)
 - <i class="fab fa-stack-overflow"></i> [https://tinyurl.com/twxsa92](https://stackoverflow.com/users/9489566/giovanni-colitti?tab=profile)
@@ -43,28 +42,19 @@ regression, classification, clustering, feature engineering, linear
 programming and optimization methods, causal analysis, Bayesian and Monte
 Carlo methods
 
-- **Coding**:
-R, SQL, Bash, Stata, Python
+- **Programming**: 
+R (including dplyr, data.table, shiny, echarts4r, ompr, tidymodels), 
+SQL (MySQL, PostgreSQL, GoogleSQL, MSSQL), Bash, Python, Stata, Javascript/HTML/CSS
 
-- **R Packages**:
-dplyr, data.table, shiny, echarts4r, ompr, tidymodels, httr2
-
-- **Tools**:
-RStudio, Git, Docker, Google Cloud, VS Code
-
-- **Coursework**: <br>
-R Programming (I/II)  <br>
-Quantitative Business Science <br>
-Econometrics (I/II) <br>
-Web Applications in R with Shiny <br>
-Quantitative Methods <br>
-Applied Microeconomics <br>
-Advanced Macroeconomics <br>
-<!-- Ecological Data Analysis in R <br> -->
-<!-- Financial Econometrics <br> -->
+- **Tools**: 
+Git, Docker, Google Cloud Platform, BigQuery, Visual Studio Code, RStudio
 
 - **Languages**:
-English, Chinese
+Fluent in English and Chinese
+
+- **Bonus**:
+
+
 
 Main
 ================================================================================
@@ -76,6 +66,65 @@ Experienced Data Scientist with a strong background in Economics, currently buil
 drive insights and visibility into cloud infrastructure at Apple. 
 
 
+Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+
+### Apple (contract)
+
+*Data Scientist*
+
+Remote
+
+2022 - Current
+
+- Led the optimization of BigQuery table schemas and pipelines for trillions of rows of data, 
+  reducing query costs by over 90%.
+- Contributed to the development of a K8s cost model, wrote an API 
+  to facilitate the extraction of cost information from the model, and designed a Shiny app for 
+  visualization and counterfactual analysis.
+- Automated tooling for customer chargebacks and built tools to forecast resource 
+  clawbacks, streamlining reporting and planning processes.
+- Developed and presented interactive K8s usage reports, enhancing internal customer 
+  visibility and efficiency.
+- Performed simulations to quantify the impact of new server configs on resource fragmentation and cost.
+
+  
+### Fieldin
+
+*Senior Business Intelligence Analyst*
+
+Remote
+
+2020 - 2022
+
+- Developed an app for interactive drag-and-drop creation of visualizations and tables in PowerPoint slides, 
+  saving users hours per week as revealed by a user survey.
+- Created an algorithm for counting harvest loads by analyzing distance patterns, achieving 90% 
+  prediction accuracy.
+- Developed an app for interactive mapping of machine data and additional apps for ad-hoc 
+  report creation, supporting the customer success team.
+- Managed database tables serving as the backend for the apps used to support the customer success team.
+- Created and managed a platform for developing and publishing web applications using ShinyProxy.
+
+### Grimmway
+
+*Data Scientist*
+
+Remote
+
+2018 - 2020
+
+- Developed machine learning models to improve sales and yield forecasts by 30-50% over previous 
+  methods.
+- Built a YOLO v5 object detection pipeline to generate carrot stand count estimates with 95% 
+  accuracy, dramatically decreasing costs.
+- Developed LP models to optimize planting and harvesting, maximizing yield and 
+  meeting sales demand.
+- Developed an R package for time-series cross-validation.
+- Analyzed research trial data, performed sample size calculations, and provided spatial sampling 
+  recommendations to the agronomy team.
+  
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -94,67 +143,6 @@ B.A. in Economics (3.8 GPA)
 Camarillo, CA
 
 2016
-
-Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
-
-
-### Data Scientist
-
-Apple - Cloud Services (contract)
-
-Remote
-
-2022 - Current
-
-- Contributed to the development of a Kubernetes cost model for the leadership team, wrote an API 
-  to facilitate the extraction of cost information from the model, and designed a Shiny app for 
-  visualization and counterfactual analysis.
-- Automated tooling for customer chargebacks and built tools to project Kubernetes quota 
-  clawbacks, streamlining reporting and planning processes.
-- Developed and presented interactive Kubernetes usage reports, enhancing internal customer 
-  visibility and efficiency.
-- Led the optimization of BigQuery table schemas and pipelines for trillions of rows of data, 
-  reducing query costs by over 90%.
-
-  
-### Senior Business Intelligence Analyst 
-
-Fieldin
-
-Remote
-
-2020 - 2022
-
-- Developed a Shiny app for interactive creation of visualizations and tables in PowerPoint slides, 
-  saving users hours per week as revealed by a user survey.
-- Created an algorithm for counting harvest loads by analyzing distance patterns, achieving 90% 
-  prediction accuracy.
-- Established a framework for estimating customer costs, aiding in strategic planning.
-- Developed a Shiny app for interactive mapping of machine data and additional apps for ad hoc 
-  report creation, supporting the customer success team.
-- Managed database tables serving as the backend for the apps used in customer success team's 
-  reporting.
-- Created and managed a platform for developing and publishing web applications using ShinyProxy.
-
-### Data Scientist
-
-Grimmway
-
-Bakersfield, CA
-
-2018 - 2020
-
-- Developed machine learning models to improve sales and yield forecasts by 30-50% over previous 
-  methods.
-- Built a YOLO v5 object detection pipeline to generate carrot stand count estimates with 95% 
-  accuracy, dramatically decreasing costs.
-- Created linear programming models to optimize planting and harvesting, maximizing yield and 
-  meeting sales demand.
-- Developed an R package for time-series cross-validation and Shiny apps for visualization and 
-  optimization.
-- Analyzed research trial data, performed sample size calculations, and provided spatial sampling 
-  recommendations to the agronomy team.
 
 
 \pagebreak
