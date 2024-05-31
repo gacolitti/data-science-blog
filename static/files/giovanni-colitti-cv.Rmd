@@ -52,9 +52,6 @@ Git, Docker, Google Cloud Platform, BigQuery, Visual Studio Code, RStudio
 - **Languages**:
 Fluent in English and Chinese
 
-- **Bonus**:
-
-
 
 Main
 ================================================================================
