@@ -1,0 +1,19 @@
+[user]
+	name = 'Giovanni Colitti'
+	email = g.a.colitti@gmail.com
+[pull]
+	rebase = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = ~/.gitignore
+	sshCommand = ssh -i ~/.ssh/id_rsa
+[credential]
+	helper = cache
+[url "git@github.com:"]
+	insteadOf = https://github.com/

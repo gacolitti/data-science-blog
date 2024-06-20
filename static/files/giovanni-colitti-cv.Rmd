@@ -42,10 +42,16 @@ programming and optimization methods, causal analysis, Bayesian and Monte
 Carlo methods
 
 - **Coding**:
-R (shiny, data.table, dplyr, ggplot, plotly, rmarkdown, leaflet, 
-tidymodels, fable, brms, lpSolve, 
-purrr, devtools, golem, testthat, renv, shinytest), 
-Stata, SQL, Git, Docker 
+R (shiny, data.table, dplyr, ggplot, echarts4r, leaflet, tidymodels, fable, brms, lpSolve, golem), 
+SQL (MySQL,
+PostgreSQL, GoogleSQL,
+MSSQL), Bash, Python, Stata,
+Javascript/HTML/CSS
+
+- **Tools**:
+Git, Docker, Google Cloud
+Platform, BigQuery, Visual Studio
+Code, RStudio
 
 - **Languages**:
 English, Chinese
@@ -54,14 +60,11 @@ Coursework {#skills}
 --------------------------------------------------------------------------------
 
 - R Programming (I/II)
-- Ecological Data Analysis in R
 - Quantitative Business Science
 - Econometrics (I/II)
 - Financial Econometrics
 - Web Applications in R with Shiny
 - Quantitative Methods
-- Applied Microeconomics
-- Advanced Macroeconomics
 
 Main
 ================================================================================
@@ -72,70 +75,66 @@ Giovanni Colitti {#title}
 Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
+### Apple - Services Engineering (contract)
 
-### Data Scientist
-
-Apple - Cloud Services (contract)
+_Data Scientist_
 
 Remote
 
 2022 - Current
 
-- Helped create the cost model for K8s services at Apple and created a Shiny app used to 
-  visualize the cost model under different parameters.
-- Built tooling for automated K8s chargebacks used by finance.
-- Developed K8s usage reports for internal customers to improve transparency and efficiency. 
-- Analyzed workloads' usage patterns and performed scheduling simulations to make
-  recommendations on hardware configurations.
-- Created multiple internal R packages to facilitate working with Mosaic and Quip APIs.
-  
-### Senior BI Analyst 
+- Led the optimization of BigQuery table schemas and pipelines for
+  trillions of rows of data, reducing query costs by over 90%.
+- Contributed to the development of a K8s cost model, wrote an API to
+  facilitate the extraction of cost information from the model, and designed
+  a Shiny app for visualization and counterfactual analysis.
+- Automated tooling for customer chargebacks and built tools to forecast
+  resource clawbacks, streamlining reporting and planning processes.
+- Developed and presented interactive K8s usage reports, enhancing
+  internal customer visibility and efficiency.
+- Performed simulations to quantify the impact of new server configs on
+  resource fragmentation and cost.
+- Identified opportunities to optimize batch workload scheduling using custom scheduling simulations.
 
-Fieldin
+### Fieldin
+
+_Senior Business Intelligence Analyst_
 
 Remote
 
 2020 - 2022
 
-- Developed Shiny app to perform interactive mapping of machine data
-- Developed Shiny app to interactively create visualizations and tables in PowerPoint slides;
-  A user survey revealed time-savings from the app of hours per week per user.
-- Developed algorithm for counting harvest loads by analyzing distance patterns between 
-  harvesters and bankouts.
-- Predicted machine unloading events with 90% accuracy.
-- Created framework for estimating customer costs.
-- Used ShinyProxy to publish applications and manage user access.
+- Developed an app for interactive drag-and-drop creation of visualizations
+  and tables in PowerPoint slides, saving users hours per week as
+  revealed by a user survey.
+- Created an algorithm for counting harvest loads by analyzing distance
+  patterns, achieving 90% prediction accuracy.
+- Developed an app for interactive mapping of machine data and
+  additional apps for ad-hoc report creation, supporting the customer
+  success team.
+- Managed database tables serving as the backend for the apps used to
+  support the customer success team.
+- Created and managed a platform for developing and publishing web
+  applications using ShinyProxy.
 
-### Data Scientist
+### Grimmway
 
-Grimmway
+_Data Scientist_
 
-Bakersfield, CA
+Remote
 
 2018 - 2020
 
-- Trained ML models in R to forecast sales and yield; forecasts improved predictive accuracy 
-  by 30-50% over previous methods.
-- Built object detection pipeline to generate carrot stand count estimates.
-- Implemented LPs in R to optimize planting and harvesting activities.
-- Analyzed field trial data in R using appropriate statistical methods.
-- Developed an R package for performing cross-validation of time-series 
-  data with irregular time slices.
-- Created Shiny apps to visualize forecasts and implement constrained optimization problems.
-- Performed sample size calculations and provided spatial sampling recommendations.
-- Communicated analytical methods and results to the executive team.
+- Developed machine learning models to improve sales and yield
+  forecasts by 30-50% over previous methods.
+- Built a YOLO v5 object detection pipeline to generate carrot stand count
+  estimates with 95% accuracy, dramatically decreasing costs.
+- Developed LP models to optimize planting and harvesting, maximizing
+  yield and meeting sales demand.
+- Developed an R package for time-series cross-validation.
+- Analyzed research trial data, performed sample size calculations, and
+  provided spatial sampling recommendations to the agronomy team.
 
-### Research Assistant
-
-California State University, Channel Islands
-
-Camarillo, CA
-
-2014
-
-- Created visualizations in Stata and wrote literature reviews of scientific articles 
-  related to Chinese & Indian stock, currency, and debt markets. 
-  
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
