@@ -88,13 +88,12 @@ Remote
 - Contributed to the development of a K8s cost model, wrote an API to
   facilitate the extraction of cost information from the model, and designed
   a Shiny app for visualization and counterfactual analysis.
-- Automated tooling for customer chargebacks and built tools to forecast
-  resource clawbacks, streamlining reporting and planning processes.
-- Developed and presented interactive K8s usage reports, enhancing
+- Built tools to forecast resource clawbacks, streamlining reporting and planning processes.
+- Developed and presented K8s usage reports, enhancing
   internal customer visibility and efficiency.
 - Performed simulations to quantify the impact of new server configs on
-  resource fragmentation and cost.
-- Identified opportunities to optimize batch workload scheduling using custom scheduling simulations.
+  resource fragmentation.
+- Developed an algorithm to improve scheduling efficiency by 25%.
 
 ### Fieldin
 
@@ -104,16 +103,12 @@ Remote
 
 2020 - 2022
 
-- Developed an app for interactive drag-and-drop creation of visualizations
-  and tables in PowerPoint slides, saving users hours per week as
-  revealed by a user survey.
+- Developed an app for interactive drag-and-drop creation of PowerPoint visualizations and tables, 
+  saving users hours weekly according to a survey.
 - Created an algorithm for counting harvest loads by analyzing distance
   patterns, achieving 90% prediction accuracy.
-- Developed an app for interactive mapping of machine data and
-  additional apps for ad-hoc report creation, supporting the customer
-  success team.
-- Managed database tables serving as the backend for the apps used to
-  support the customer success team.
+- Developed an app for interactive mapping of machine data and apps for ad-hoc report creation, 
+  supporting the customer success team.
 - Created and managed a platform for developing and publishing web
   applications using ShinyProxy.
 
@@ -131,7 +126,6 @@ Remote
   estimates with 95% accuracy, dramatically decreasing costs.
 - Developed LP models to optimize planting and harvesting, maximizing
   yield and meeting sales demand.
-- Developed an R package for time-series cross-validation.
 - Analyzed research trial data, performed sample size calculations, and
   provided spatial sampling recommendations to the agronomy team.
 
